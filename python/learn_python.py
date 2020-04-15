@@ -170,3 +170,30 @@ print("运算符优先级       从上到下优先级递减\n"
       "in，not in\n"
       "not，and，or"
       )
+
+# 四、数据类型及数据类型转换
+print("四、====================")
+
+# 1、数字类型
+var_int = 1          # 1是一个整型数据
+var_float = 1.2      # 1.2是一个浮点型数据
+var_complex = 1 + 2j
+# 1+2j是一个复数数据，也可以写成complex(1, 2)，实部和虚部都是浮点型数据,j是相当于数学复数里的i
+# 数字类型可以进行运算
+# 例如：
+double_2 = 2 + 2
+double_2_2 = 2.2 + 2.2
+double_2_2j = (2 + 2j) + (2 + 2j)
+# 打印一下
+print("整型数据:" + str(var_int))
+print("浮点型数据:" + str(var_float))
+print("复数数据" + str(var_complex))
+print("2 + 2 = " + str(double_2))
+print("2.2 + 2.2 = " + str(double_2_2))
+print("(2 + 2j) + (2 + 2j) = " + str(double_2_2j))
+# 2、字符串类型
+var_str1 = " hello "
+var_str2 = " world "
+str_joint = var_str1 + var_str2     # 字符串相加的操作被称作字符串拼接
+str_section_1 = var_str1[1]         # 变量名[索引值]：被称为切片，可以通过切片访问字符串中的值
+
