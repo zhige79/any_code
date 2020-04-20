@@ -195,5 +195,17 @@ print("(2 + 2j) + (2 + 2j) = " + str(double_2_2j))
 var_str1 = " hello "
 var_str2 = " world "
 str_joint = var_str1 + var_str2     # 字符串相加的操作被称作字符串拼接
-str_section_1 = var_str1[1]         # 变量名[索引值]：被称为切片，可以通过切片访问字符串中的值
+str_section_1 = var_str1[1]         # 变量名[索引值]：被称为切片，可以通过切片访问字符串的一个字符
+str_section_2 = var_str1[1:3]       # 变量名[索引值:索引值]，也是切片，通过这种语法访问字符串中的一部分,返回索引1，2的值
+# 骚操作来了
+cool_str = var_str1[1:3] + var_str2     # 可以通过切片所生成的字符串进行拼接
+# 打印一下
+print("字符串1：" + var_str1)
+print("字符串2： " + var_str2)
+print("字符串拼接 字符串1+字符串2：" + str_joint)
+print("字符串切片 字符串1中索引1所对应的值:" + str_section_1)
+print("字符串切片 字符串中")
 
+# 另外，还有*运算符，重复输出字符串
+print("\'hello\' * 5 = " + "hello" * 5
+      )
