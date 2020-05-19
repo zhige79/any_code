@@ -84,9 +84,9 @@ Bitwise_left = 60 << 2  # 按位左移，左边为数据，右边为移动的位
 Bitwise_right = 60 >> 2  # 按位右移
 
 # 逻辑运算符         True和False的运算符
-is_and = True and False     # 逻辑与
-is_or = True or False       # 逻辑或
-is_not = not True           # 逻辑非
+is_and = True and False  # 逻辑与
+is_or = True or False  # 逻辑或
+is_not = not True  # 逻辑非
 
 # 成员运算符
 is_member = 'a' in 'apple'
@@ -142,13 +142,13 @@ print("60 << 2 = " + str(Bitwise_left))  # 按位左移
 print("60 >> 2 = " + str(Bitwise_right))  # 按位右移
 # 逻辑运算符
 print("     逻辑运算符")
-print("True and False = " + str(is_and))    # 且
-print("True or False = " + str(is_or))      # 或
-print("not True = " + str(is_not))          # 非
+print("True and False = " + str(is_and))  # 且
+print("True or False = " + str(is_or))  # 或
+print("not True = " + str(is_not))  # 非
 # 成员运算符
 print("     成员运算符")
 print("\'a\' in \'apple\' = " + str(is_member))  # 包含在内
-print("\'a\' not in \'apple\' = " + str(not_member))    # 不包含在内
+print("\'a\' not in \'apple\' = " + str(not_member))  # 不包含在内
 # 身份运算符
 print("     身份运算符")
 print("a = 1    b = a")
@@ -175,8 +175,8 @@ print("运算符优先级       从上到下优先级递减\n"
 print("四、====================")
 
 # 1、数字类型
-var_int = 1          # 1是一个整型数据
-var_float = 1.2      # 1.2是一个浮点型数据
+var_int = 1  # 1是一个整型数据
+var_float = 1.2  # 1.2是一个浮点型数据
 var_complex = 1 + 2j
 # 1+2j是一个复数数据，也可以写成complex(1, 2)，实部和虚部都是浮点型数据,j是相当于数学复数里的i
 # 数字类型可以进行运算
@@ -194,11 +194,11 @@ print("(2 + 2j) + (2 + 2j) = " + str(double_2_2j))
 # 2、字符串类型
 var_str1 = " hello "
 var_str2 = " world "
-str_joint = var_str1 + var_str2     # 字符串相加的操作被称作字符串拼接
-str_section_1 = var_str1[1]         # 变量名[索引值]：被称为切片，可以通过切片访问字符串的一个字符
-str_section_2 = var_str1[1:3]       # 变量名[索引值:索引值]，也是切片，通过这种语法访问字符串中的一部分,返回索引1，2的值
+str_joint = var_str1 + var_str2  # 字符串相加的操作被称作字符串拼接
+str_section_1 = var_str1[1]  # 变量名[索引值]：被称为切片，可以通过切片访问字符串的一个字符
+str_section_2 = var_str1[1:3]  # 变量名[索引值:索引值]，也是切片，通过这种语法访问字符串中的一部分,返回索引1，2的值
 # 骚操作来了
-cool_str = var_str1[1:3] + var_str2     # 可以通过切片所生成的字符串进行拼接
+cool_str = var_str1[1:3] + var_str2  # 可以通过切片所生成的字符串进行拼接
 # 打印一下
 print("字符串1：" + var_str1)
 print("字符串2： " + var_str2)
@@ -218,7 +218,7 @@ three = """
 第二行字符串"""
 print(three)
 # f-string型字符串
-print(f'{1+2}')
+print(f'{1 + 2}')
 
 # 列表        # 列表是最常用的数据类型之一，可以包含任意数据类型 可修改
 a = [1, 2, 3, 4]
@@ -229,16 +229,16 @@ print(b)
 # 通过索引来访问列表中的值
 print(a[2])
 # 索引是从0开始计算的，这就是为啥大家说程序员数数都是从0开始数
-print(b[1:3])     # 列表切片
+print(b[1:3])  # 列表切片
 # 可以通过索引值直接修改列表中的元素
-a[2] = 5          # 修改列表a中索引为2的元素为5
-print(a)          # 输出
-del a[2]          # 删除元素
+a[2] = 5  # 修改列表a中索引为2的元素为5
+print(a)  # 输出
+del a[2]  # 删除元素
 
 # 元组        # 与列表基本相同，唯一的不同是不可修改
 a = (1, 2, 3, 4)
-print(type(a))    # type()方法返回变量a的类型，这个方法是python的一个内置方法，对于任何对象都有用
-b = (1,)          # 如果一个元组里面只有1个元素，需要加一个逗号，否则会将()看作运算符
+print(type(a))  # type()方法返回变量a的类型，这个方法是python的一个内置方法，对于任何对象都有用
+b = (1,)  # 如果一个元组里面只有1个元素，需要加一个逗号，否则会将()看作运算符
 print(type(b))
 # 访问元组      使用索引
 print(a[2])
@@ -253,4 +253,89 @@ del c
 # print(c)        # 这行会报错
 
 # 字典
+# 字典是另一种可变容器模型，可存储任意类型对象，利用{}表示
+d = {'1': 'one', '2': 'two'}  # 这是一个字典    key, value对象，键值对对象
+print(d['1'])  # 字典通过键来作为内容索引，键一般是唯一的
+print(d)
+# 修改字典内容
+d['3'] = 'three'  # 添加内容
+print(d)
+d['1'] = 'no.1'  # 更新内容
+print(d)
+del d['1']  # 通过键删除字典中某个元素
+print(d)
+d.clear()  # 清空字典中所有条目
+print(d)
+del d  # 删除字典
+# print(d)        运行会报错，因为这时字典d已经不存在
+"""
+      注意：
+            1、不允许同一个键出现两次。创建时如果同一个键被赋值两次，后一个值会被记住
+            2、键必须不可变，所以可以用数字，字符串或元组充当，所以用列表就不行
+            3、
+"""
+# 这里列出了一些字典常用的函数
+a = {'1': 'one'}
+b = {'2': 'two', '1': 'one'}
+seq = [1, 2, 3]
+print(len(a))  # 输入字典的长度
+print(str(a))  # 输出字典可打印的字符串表示
+print(type(a))  # 输出变量a的类型，即字典
+a.clear()  # 清空字典a中的所有元素
+b.copy()  # 返回字典b的浅复制
+a.fromkeys(seq, 10)  # 前一个参数是一个序列，用这个序列作为字典的键，后一个参数作为字典所有键的初始值
+b.get('1', '无此元素')  # 返回指定键的值，如果值不在字典中返回default值
+b.items()  # 以列表返回可遍历的(键, 值) 元组数组
+print(b.keys())  # 返回字典b中的所有键
+a.update(b)  # 把字典b中的元素更新到字典a
+print(a.values())  # 以列表形式返回字典中的所有值
 
+# 五、函数与类
+print("五、====================")
+
+
+# 函数
+# 函数使用关键字def定义
+# 这里创建了一个add函数，用来实现2数相加
+def add(a, b, c=0):     # c设置了一个默认值
+    return a + b + c
+
+
+# 在这里调用这个函数
+print(add(1, 2))  # 这里输出1+2的值
+# 匿名函数，使用lambda关键字
+sums = lambda a, b: a+b
+print(sums(1, 2))       # 使用变量名来作为函数名，可有效精简代码
+# 全局变量与局部变量
+# 定义在函数内部的变量拥有一个局部作用域，定义在函数外的拥有全局作用域。
+# 局部变量只能在其被声明的函数内部访问，而全局变量可以在整个程序范围内访问。
+
+
+# 类         面向对象编程 class关键字
+# 类就像一个模板，可以通过类去创建对象实例
+# 这里我们创建一个学生类
+class Student:
+      def __init__(self, name):           # __init__函数实现了对象的初始化
+            self.name = name
+
+# 这里来创建实例
+xiaoming = Student('xiaoming')            # 创建了一个实例
+print(xiaoming.name)                      # 通过实例，输出该实例的属性
+
+# 六，异常处理
+print("六、====================")
+# 我们在程序调试的时候，经常会遇到程序出现异常，大多数异常不会被程序处理，异常的处理就显得尤为重要
+# 使用try except语句进行异常处理
+
+try:
+      a = {'1', 'd'}
+      del a
+      print(a)          # 此处故意创建了一个NameError异常
+      print("正常运行")
+except NameError:             # 程序捕获该异常，并给出处理办法
+      print("出现错误")
+      pass
+else:                         # 没有发生异常就进入else处理逻辑
+      print('输出else语句')
+finally:                      # 无论是否发生异常都会进入finally处理逻辑
+      print('进入finally处理逻辑')
